@@ -72,8 +72,7 @@ def game_engine(player_name):
                 human_hand.append(key_index[-1])          
                 del main_deck[key_index[-1]]
                 del key_index[-1]
-                hidden = f"'[{computer_hand[0]}]'" + ', HIDDEN'
-                #hidden_total = 'HIDDEN'   
+                hidden = f"'[{computer_hand[0]}]'" + ', HIDDEN'                   
                 computer_card_values = 'HIDDEN'                      
                 hand_stats(human_card_values,human_hand,computer_hand,key_index,main_deck,computer_card_values,hidden) 
                 if sum(human_card_values) > 21:
